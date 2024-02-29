@@ -1,0 +1,91 @@
+.todoCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20vh;
+  position: relative;
+  flex-direction: column;
+}
+body {
+/* background: url(../../public/background.jpg); */
+background: rgb(141,141,141);
+background: radial-gradient(circle, rgba(141,141,141,0.8627100498402486) 0%, rgba(144,144,144,0.85710780894389) 48%, rgba(59,59,59,0.8599089293920693) 100%);
+}
+.listForm {
+  display: flex;
+  border: none;
+
+}
+.listForm input {
+  height: 4em;
+  width: 30vw;
+  text-align: center;
+  font-size: 24px;
+  /* border-radius:30px 0px 0px 30px; */
+  border-radius: 30px;
+  background-color: rgb(19, 19, 19);
+  color: rgb(255, 255, 255);
+  border: 8px solid rgb(255, 255, 255);
+
+}
+.listForm button {
+  padding: 0px 14px;
+  text-align: center;
+  cursor: pointer;
+  background-color:rgb(80, 80, 80) ;
+  color: white;
+  border: 8px solid rgb(80, 80, 80) ;
+  border-radius: 20px;
+  margin-left: 10px;
+  border-left: none;
+  box-shadow: 13px 13px 20px black;
+  font-size:28px;
+}
+.listForm button:hover {
+transform: scale(1.1);
+}
+.todolist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  row-gap: 40px;
+  column-gap: 10vw;
+  width: 100vw;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+
+}
+.task {
+  display: flex;
+  gap: 10px;
+  min-width: 20vw;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 0 1vw 1vw;
+  font-size: 28px;
+  background-color: rgba(22, 22, 22, 0.847);
+  color: white;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 13px 13px 20px  rgb(45, 45, 45);
+  animation: fadeInOut 4s ease infinite; 
+}
+.task span {
+  width: 100%;
+}
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
